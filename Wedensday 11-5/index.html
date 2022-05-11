@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q1:Write a query to find the addresses (location_id, street_address, city, state_province, country_name) of all the departments. </h1>
+
+    <p> The answer is: SELECT * FROM `locations` INNER JOIN `countries`ON locations.country_id=countries.country_id; </p>
+
+    <hr>
+
+    <h1> Q2:Write a query to find the name (first_name, last name), department ID and name of all the employees.</h1>
+    
+    <p> The answer is: SELECT employees.first_name, employees.last_name, departments.department_id FROM `employees` INNER JOIN `departments`ON employees.department_id=departments.department_id; </p>
+
+    <hr>
+
+    <h1>Q3:Write a query to find the name (first_name, last_name), job, department ID and name of the employees who works in London.</h1>
+
+    <p> The answer is:SELECT employees.first_name,employees.last_name, employees.job_id, `department_id` FROM `employees` WHERE country_id="LGW"; </p>
+
+<hr>
+
+    <h1>Q4:Write a SQL statement to rename the table countries to country_new.</h1>
+
+    <p> The answer is:ALTER TABLE countries RENAME country_new; </p>
+
+    <hr>
+
+    <h1>Q5:Write a SQL statement to add a column region_id after state_province to the table locations. </h1>
+
+    <p> The answer is:ALTER TABLE `locations` CHANGE `region_id` `region_id` INT(11) NOT NULL AFTER `state_province`; </p>
+
+    <hr>
+
+    <h1>Q6:Write a SQL statement to add a primary key for the columns location_id in the locations table.</h1>
+
+    <p> The answer is:ALTER TABLE locations ADD PRIMARY KEY(location_id); </p>
+
+    <hr>
+
+    <h1>Q7:Write a query to display the names (first_name, last_name) using alias name “First Name", "Last Name" </h1>
+
+    <p> The answer is:SELECT first_name AS FirstName, last_name AS LastName FROM `employees` WHERE 1; </p>
+
+    <hr>
+
+
+    <h1>Q8:Write a query to get all employee details from the employee table order by first name, descending. </h1>
+
+    <p> The answer is: SELECT first_name FROM employees ORDER BY first_name DESC; </p>
+</body>
+</html>
