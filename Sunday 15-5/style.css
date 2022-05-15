@@ -1,0 +1,125 @@
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap'); */
+
+body{
+    font-family:Poppins;
+    
+}
+
+div {
+     text-align: center;
+     font-family: monospace;
+   
+
+}
+
+div h1{
+    font-size: 400%;
+}
+
+div p {
+    font-size: x-large;
+    color: rgba(0, 0, 0, 0.637);
+}
+
+div img{
+    height: 40%;
+    width: 40%;
+}
+
+div button{
+    position: absolute;
+    top: 80%;
+    left: 52%;
+    width: 15%;
+    height: 6%;
+    border-radius: 25px;
+    border: none;
+}
+
+#b1 {
+   margin-left: -18%;
+   background-color:#5a54ff ;
+}
+
+#b1:hover{
+    background-color:#5a54ffcb ;
+}
+
+#b2 {
+
+    background-color: #f54e4e;
+}
+
+#b2:hover {
+
+    background-color: #f54e4ec4;
+}
+
+
+/* //////////////////////////////////////////////////////////// */
+
+@media  (min-width: 800px) and (max-width: 1000px) {
+    div img{
+        height: 65%;
+        width: 65%;
+    }
+   
+    div button{
+        top: 45%;
+       
+    }
+  }
+
+
+
+  @media  (min-width: 600px) and (max-width: 799px) {
+
+    div img{
+        height: 55%;
+        width: 55%;
+    }
+
+    div button{
+        top: 48%;
+       
+    } 
+  }
+
+
+  @media  (min-width: 400px) and (max-width: 599px) {
+
+    div img{
+        height: 55%;
+        width: 55%;
+    }
+
+    div button{
+        top: 55%;
+        width: 30%;
+       
+    } 
+    #b1 {
+        margin-left: -35%;
+   
+     }
+  }
+
+  
+  @media  (min-width: 280px) and (max-width: 399px) {
+
+    div img{
+        height: 90%;
+        width: 90%;
+    }
+
+    div button{
+        top: 75%;
+        width: 30%;
+        height: 6%;
+       
+    } 
+    #b1 {
+        margin-left: -35%;
+   
+     }
+  }
