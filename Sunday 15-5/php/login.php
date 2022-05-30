@@ -51,6 +51,7 @@ elseif($loginEmail !== ($row['email'])){
 
 ///////////////////////////////////// admin ////////////////////////
 if(($loginEmail == "ayaalsawa279@gmail.com") && ($loginPass == "AAAaaa123***")){
+    $row['last-login']= date("d-m-Y - h:i:sa");
     header ("location: admin.php");
 }
 
